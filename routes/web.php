@@ -13,9 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('dashboard.layout');
-});
+// Route::get('/', function () {
+//     return view('dashboard.layout');
+// });
 
-Route::resource('offers','App\Http\Controllers\OfferController');
+Route::resource("admin" , "\App\Http\Controllers\AdminController") ;
 
+Route::resource("/admin-association" , "\App\Http\Controllers\AssociationController") ;
+
+Route::resource("/admin-volunteer" , "\App\Http\Controllers\VolunteerController") ;
+
+Route::resource('offers','App\Http\Controllers\OfferController') ;
