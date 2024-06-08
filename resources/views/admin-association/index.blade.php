@@ -73,17 +73,18 @@
                 <td>{{ $association->email }}</td>
                 <td>{{ $association->user_type }}</td>
                 <td>
-                <div>
+                <button class="btn btn-light">
                     <a href="{{ route('admin-association.show' , $association->id) }}">
                         Association Offers
                     </a>
-                </div>
+                </button>
+                <br />
                 <form action="{{ route('admin-association.destroy' , $association->id) }}" method="post">
                         
                         @csrf
                         @method("DELETE")
 
-                        <button type="submit" class="btn btn-danger">
+                        <button type="submit" class="btn btn-danger" style="width: 160px" >
                             Delete
                         </button>
                     </form>

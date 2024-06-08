@@ -41,7 +41,7 @@ class AssociationController extends Controller
     public function show(Association $association)
     {
         
-        $offers = \App\Models\Offer::where("user_id" , "=" , $id) ;
+        $offers = \App\Models\Offer::where("user_id" , "=" , $association) ;
 
         return view("admin-association.show" , compact("offers")) ;
 

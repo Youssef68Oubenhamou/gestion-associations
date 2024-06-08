@@ -55,7 +55,7 @@
     </nav>
 </div>
 <table class="table caption-top">
-    <caption>List of Volunteers</caption>
+    <caption>List of Offers</caption>
     <thead>
         <tr>
             <th scope="col">#</th>
